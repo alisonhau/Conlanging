@@ -1,8 +1,10 @@
 \documentclass{article}
+\usepackage[utf8]{inputenc} 
 \usepackage{pgfplotstable}
 \usepackage{tipa}
 \usepackage{colortbl}
 \usepackage{booktabs}
+\usepackage{microtype} 
 
 \begin{document}
 \section{Lexicon}
@@ -11,20 +13,24 @@
 	string type,
 	sort,
 	sort key=ipa,
-	columns={ipa,pos,trans,eg},
+	columns={ipa,pos,trans},	% example usage key: eg
 	sort cmp=string <,
 	every even row/.style={
 		before row={\rowcolor[gray]{0.9}}
 		},
 	columns/ipa/.style={
-		column name=IPA LaTeX, column type={l},
+		column name=IPA, column type={l},
 		postproc cell content/.style={@cell content=\textipa{##1}}
 		},
-	columns/pos/.style={column name=Part of Speech, column type={l}},
-	columns/trans/.style={column name=English Translation, column type={l}},
-	columns/eg/.style={column name=Example Usage, column type={l}},
+	columns/pos/.style={column name=Part of Speech, column type={c}},
+	columns/trans/.style={
+		column name=English Translation, column type={l}},
+	columns/eg/.style={
+		column name=Example Usage, column type={l},
+		postproc cell content/.style={@cell content=\textipa{##1}}
+		},
 	every head row/.style={before row=\toprule,after row=\midrule},
 	every last row/.style={after row=\toprule},
-	empty cells with= {--}
+	empty cells with={---}
 ]{lexicon.tsv}
 \end{document}

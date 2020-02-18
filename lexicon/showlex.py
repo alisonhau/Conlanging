@@ -6,6 +6,7 @@ from lexicon_entry import LexiconEntry, POS
     # search by meaning
     # search by word
     # search by contains
+    # search by part of speech
     # search by regex
 # implement add
 # implement remove
