@@ -17,7 +17,7 @@ from lexicon_entry import LexiconEntry, POS
     # part of speech
 # implement sorting for ipa (dictionary order for different symbols
 
-LEX_FILE = 'lexicon.tsv'
+LEX_FILE = 'lexicon-data.tsv'
 
 def print_intro():
     # print("lexicon commands:\n\tshow lexicon -- show\n\tadd new word -- add\n\tremove word -- remove\n\tupdate word spelling -- update\n\tupdate word meaning\n\tupdate word POS\n\tsearch for word -- search")

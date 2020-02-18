@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.13)  18 FEB 2020 01:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.13)  18 FEB 2020 01:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -615,7 +615,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-PGFPlots: reading {lexicon.tsv}
+PGFPlots: reading {lexicon-data.tsv}
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 35.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -625,8 +625,8 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./lexi
 con.aux) ) 
 Here is how much of TeX's memory you used:
- 24805 strings out of 481242
- 639921 string characters out of 5917990
+ 24806 strings out of 481242
+ 639938 string characters out of 5917990
  981301 words of memory out of 5000000
  39702 multiletter control sequences out of 15000+600000
  534813 words of font info for 33 fonts, out of 8000000 for 9000
