@@ -1,5 +1,4 @@
-Conlanging | 11-423
-alison hau
+#Conlanging | 11-423
 ---
 0. Lexicon
 ---
