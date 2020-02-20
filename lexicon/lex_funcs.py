@@ -31,51 +31,92 @@ def add(lex_d):
     new_word = LexiconEntry(ipa=new_ipa, pos=new_pos, trans=new_trans, eg=new_eg)
     
     if (new_ipa, new_pos) in lex_d:
-        print("%s is already in lexicon!" % new_word)
+        print("%s is already in lexicon!" % new_ipa)
         lex_d[ (new_ipa, new_pos) ].show_long_entry()
         usr_update = input("Overwrite? ([Y]/n) ").strip().lower()
         while usr_update not in ['y', 'n', '']:
             usr_update = input("Overwrite? ([Y]/n) ").strip()
         if usr_update == 'n':
             print("New word discarded.")
-    else:
-        lex_d[ (new_ipa, new_pos) ] = new_word
-        new_word.show_long_entry()
-        print("Added!")
+            return lex_d
+    
+    lex_d[ (new_ipa, new_pos) ] = new_word
+    new_word.show_long_entry()
+    print("Added!")
 
     return lex_d
 
-def rem():
+def rem(lex_d):
+    print("Remove word")
+    deleted_ipa = accept_entry("IPA")
+    if deleted_ipa is None: 
+        return lex_d
+
+    deleted_pos = accept_entry("Part of Speech")
+    if deleted_pos is None: return lex_d
+
+    if (deleted_ipa, deleted_pos) in lex_d:
+        deleted_word = lex_d.pop( (deleted_ipa, deleted_pos) , None)
+        deleted_word.show_long_entry()
+
+        usr_conf = input("Delete? ([Y]/n) ").strip().lower()
+        while usr_conf not in ['y', 'n', '']:
+            usr_conf = input("Delete? ([Y]/n) ").strip()
+        if usr_conf == 'n':
+            lex_d[ (deleted_ipa, deleted_pos) ] = deleted_word
+            print("Cancelled.")
+        else:
+            print("Deleted!")
+    else:
+        print("%s(%s) not found in dictionary." % (deleted_ipa, deleted_pos))
+    
+    return lex_d
+
+def show(lex_d):
+    lex_keys = sorted(lex_d)
+
+    for key in lex_keys:
+        lex_d[key].show_line_entry()
+
+    print("%s entries" % (len(lex_keys)))
+
+    return lex_d
+
+def show_long(lex_d):
+    lex_keys = sorted(lex_d)
+
+    for key in lex_keys:
+        lex_d[key].show_long_entry()
+
+    print("%s entries" % (len(lex_keys)))
+
+    return lex_d
+
+def update_ipa(lex_d):
     return
 
-def disp_all():
+def update_mean(lex_d):
     return
 
-def update_ipa():
+def update_pos(lex_d):
     return
 
-def update_mean():
+def search(lex_d):
     return
 
-def update_pos():
+def search_ipa(lex_d):
     return
 
-def search():
+def search_ipa_reg(lex_d):
     return
 
-def search_ipa():
+def search_mean(lex_d):
     return
 
-def search_ipa_reg():
+def search_about(lex_d):
     return
 
-def search_mean():
-    return
-
-def search_about():
-    return
-
-def search_pos():
+def search_pos(lex_d):
     return
 
 def man(lex_d):

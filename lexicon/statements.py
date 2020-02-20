@@ -3,7 +3,8 @@ READ_ERR_STATEMENT = 'Cannot read from input file'
 
 MAN_STATEMENT = '''Commands:
     man -- show commands
-    show all words in lexicon -- disp-all
+    show words in lexicon -- show
+    show words (longform) -- show-long
     add new word -- add
     remove word -- rem
     update word ipa -- update-ipa

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.13)  19 FEB 2020 23:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.13)  20 FEB 2020 01:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -701,7 +701,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Here is how much of TeX's memory you used:
  25062 strings out of 481242
  638880 string characters out of 5917990
- 995894 words of memory out of 5000000
+ 995893 words of memory out of 5000000
  39946 multiletter control sequences out of 15000+600000
  534813 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -711,7 +711,7 @@ s/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/tipa/tipa10.
 pfb>
-Output written on lexicon.pdf (1 page, 43337 bytes).
+Output written on lexicon.pdf (1 page, 43374 bytes).
 PDF statistics:
  27 PDF objects out of 1000 (max. 8388607)
  19 compressed objects within 1 object stream

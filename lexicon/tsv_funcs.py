@@ -42,8 +42,8 @@ def dict_to_tsv(outfile, output_dict, output_header):
             first_char = find_first_char(entry[0])
             if first_char != prev_first_char:
                 lexfile.write(BLANK_TSV_LINE)
-            ipa = output_dict[entry].get_ipa()
-            pos = output_dict[entry].get_pos()
+            ipa = output_dict[entry].get_ipa().strip()
+            pos = output_dict[entry].get_pos().strip()
             trans = '; '.join(output_dict[entry].get_trans())
             ex = '; '.join(output_dict[entry].get_eg())
             lexfile.write('%s\t%s\t%s\t%s\n' % (ipa, pos, trans, ex)) 

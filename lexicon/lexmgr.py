@@ -9,15 +9,15 @@ from statements import INTRO_STATEMENT, EXIT_STATEMENT, INPUT_ERROR_STATEMENT
     # search by about
     # search by part of speech
     # search by regex
-# implement add
-# implement remove
 # implement update
     # spelling
     # meaining
     # part of speech
-# implement sorting for ipa (dictionary order for different symbols
+# word lock (can't delete unless unlock)
+# improve sorting of ipa symbols (low priority)
 # search loop -- search + keywords to filter results one keyword at a time
 # up arrow for repl history??? (necessary?)
+# ^ https://docs.python.org/3/library/readline.html
 
 IN_LEX_FILE = 'lexicon-data.tsv'
 OUT_LEX_FILE = 'lexicon-data.tsv'
@@ -26,7 +26,8 @@ EXIT_KEYS = ['quit', 'q', 'exit', 'done']
 FUNCTION_KEYS = {
         'add': LexFuncs.add,
         'rem': LexFuncs.rem,
-        'disp-all': LexFuncs.disp_all,
+        'show': LexFuncs.show,
+        'show-long': LexFuncs.show_long,
         'update-ipa': LexFuncs.update_ipa,
         'update-mean': LexFuncs.update_mean,
         'update-pos': LexFuncs.update_pos,
@@ -51,7 +52,7 @@ def main():
     last_cmd = ''
 
     # repl
-    usr_input = input(PROMPT)
+    usr_input = input(PROMPT).strip()
     
     while usr_input not in EXIT_KEYS:
         if usr_input == '':
@@ -64,7 +65,7 @@ def main():
                 lex_dict = FUNCTION_KEYS[usr_input](lex_dict)
                 TSVFuncs.dict_to_tsv(OUT_LEX_FILE, lex_dict, lex_head)
         
-        usr_input = input(PROMPT)
+        usr_input = input(PROMPT).strip()
 
     TSVFuncs.dict_to_tsv(OUT_LEX_FILE, lex_dict, lex_head)
     print_statement(EXIT_STATEMENT)
