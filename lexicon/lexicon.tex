@@ -5,19 +5,35 @@
 \usepackage{colortbl}
 \usepackage{booktabs}
 \usepackage{microtype} 
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
 
 \begin{document}
+
 \section{Lexicon}
+\pgfplotstableset{
+	begin table=\begin{longtable},
+	end table=\end{longtable},
+	}
+
 \pgfplotstabletypeset[
 	col sep=tab,
 	string type,
-	sort,
-	sort key=ipa,
+	%sort,
+	%sort key=ipa,
 	columns={ipa,pos,trans},	% example usage key: eg
-	sort cmp=string <,
-	every even row/.style={
-		before row={\rowcolor[gray]{0.9}}
-		},
+	header=true,
+	%sort cmp=string <,
+	%every even row/.style={
+	%	before row={\rowcolor[gray]{0.9}}
+	%	},
+	skip rows between index={0}{1},
 	columns/ipa/.style={
 		column name=IPA, column type={l},
 		postproc cell content/.style={@cell content=\textipa{##1}}
@@ -29,8 +45,7 @@
 		column name=Example Usage, column type={l},
 		postproc cell content/.style={@cell content=\textipa{##1}}
 		},
-	every head row/.style={before row=\toprule,after row=\midrule},
-	every last row/.style={after row=\toprule},
-	empty cells with={---}
+	every head row/.style={before row=\toprule,after row=\midrule\endhead},
+	every last row/.style={after row=\bottomrule},
 ]{lexicon-data.tsv}
 \end{document}

@@ -90,14 +90,14 @@ class LexiconEntry:
     # show entry contents
     def show_long_entry(self):
         if self.eg[0] != '':
-            print("IPA Latex:\t%s\nPart of Speech:\t%s\nEnglish Translation:\t%s\nExample Sentence:\t%s\n" % 
-                    (self.ipa, self.pos, self.trans, self.eg))
+            print("IPA Latex:\t%s\nPart of Speech:\t%s\nEnglish Translation(s):\t%s\nExample Sentence(s):\t%s\n" % 
+                    (self.ipa, self.pos, '; '.join(self.trans), '; '.join(self.eg)))
         else:
-            print("IPA Latex:\t%s\nPart of Speech:\t%s\nEnglish Translation:\t%s\n" % 
-                    (self.ipa, self.pos, self.trans))
+            print("IPA Latex:\t%s\nPart of Speech:\t%s\nEnglish Translation(s):\t%s\n" % 
+                    (self.ipa, self.pos, '; '.join(self.trans)))
 
     def show_line_entry(self):
         if self.eg[0] != '':
-            print("%s(%s):\t%s\n%s" % (self.ipa, self.pos, self.trans,self.eg))
+            print("%s(%s):\t%s\n%s" % (self.ipa, self.pos, '; '.join(self.trans),'; '.join(self.eg)))
         else:
-            print("%s(%s):\t%s" % (self.ipa, self.pos, self.trans))
+            print("%s(%s):\t%s" % (self.ipa, self.pos, '; '.join(self.trans)))
