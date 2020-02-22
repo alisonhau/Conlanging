@@ -1,0 +1,22 @@
+It is 11 am | falling tide begins
+It is almost 11 am | rising tide ends
+It is 3 am | second falling tide has four hours
+It is 7:30 pm | second rising tide has two and a half hours
+It is 7:30 pm | second rising tide has two and a half hours
+It is 12:00 pm | falling tide has one hour
+It is 12:00 pm | falling tide has one hour
+It is 12:00 | falling tide has one hour
+It is 7 am | rising tide has two hours
+It is 5 am | rising tide begins
+It is 11 am | falling tide begins
+It is 5 pm | 2nd rising tide begins
+It is 11 pm | 2nd falling tide begins
+It is 6 am | rising tide has one hour
+It is 7 am | rising tide has 2 hours
+It is 8 am | rising tide has 3 hours
+It is 9 am | rising tide has 4 hours
+It is 10 am | rising tide has 5 hours
+It is almost 5 am | 2nd rising tide ends
+It is just past 5 pm | 2nd rising tide begins
+It is just past 11 pm | the 2nd falling tide begins
+It is 12 pm | the falling tide has one hour

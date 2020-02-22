@@ -1,0 +1,12 @@
+0 N - n 0 0 0 0 v + i + 0 1 s 1 - 0 0 0.16000003 122.87878 125.18939 120.7197 0 onset coda coda 0 0 1 0 0 0 mid a + 0 5 s 1 - 0 0 0 0 content 0 content 
+1 pau - 0 0 0 0 0 0 - i + 0 1 s 1 - 0 0 0.19500002 129.06566 130 127.52525 0 onset coda coda 0 0 1 0 0 0 initial 0 0 0 0 0 0 0 0 0 0 1 content 0 content 
+2 pau - 0 0 0 0 0 0 - i + 0 1 s 1 - 0 0 0.19 127.32323 129.69698 125.80808 0 onset coda coda 0 0 1 0 0 0 initial 0 0 0 0 0 0 0 0 0 0 1 content 0 content 
+3 pau - 0 0 0 0 0 0 - i + 0 1 s 1 - 0 0 0.13999999 127.16578 128.74332 125.82888 0 onset coda coda 0 0 1 0 0 0 initial pau - 0 0 0 0 0 0 - 0 1 content 0 content 
+4 pau - 0 0 0 0 0 0 - i + 0 1 s 1 - 0 0 0.17500001 126.57895 128.51675 125.21531 0 onset coda coda 0 0 1 0 0 0 initial pau - 0 0 0 0 0 0 - 0 1 content 0 content 
+5 pau - 0 0 0 0 0 0 - i + 0 1 s 1 - 0 0 0.17499998 126.81818 128.63637 125.45454 0 onset coda coda 0 0 1 0 0 0 initial pau - 0 0 0 0 0 0 - 0 1 content 0 content 
+6 N - n 0 0 0 0 v + i + 0 1 s 1 - 0 0 0.12500003 124.43182 126.36364 122.65151 0 onset coda coda 0 0 1 0 0 0 mid a + 0 5 s 1 - 0 0 0 0 content 0 content 
+7 pau - 0 0 0 0 0 0 - i + 0 1 s 1 - 0 0 0.16500002 124.68182 127.72727 122.59091 0 onset coda coda 0 0 1 0 0 0 initial pau - 0 0 0 0 0 0 - 0 1 content 0 content 
+8 pau - 0 0 0 0 0 0 - i + 0 1 s 1 - 0 0 0.19999999 126.02871 128.30144 124.54546 0 onset coda coda 0 0 1 0 0 0 initial pau - 0 0 0 0 0 0 - 0 1 content 0 content 
+9 N - n 0 0 0 0 v + i + 0 1 s 1 - 0 0 0.15500003 124.80186 126.10722 123.56644 0 onset coda coda 0 0 1 0 0 0 mid a + 0 5 s 1 - 0 0 0 0 content 0 content 
+10 N - n 0 0 0 0 v + i + 0 1 s 1 - 0 0 0.15499997 126.45834 127.53788 125.56818 0 onset coda coda 0 0 1 0 0 0 mid a + 0 5 s 1 - 0 0 0 0 content 0 content 
+11 pau - 0 0 0 0 0 0 - i + 0 1 s 1 - 0 0 0.16499999 123.13636 126.95454 120.63637 0 onset coda coda 0 0 1 0 0 0 initial pau - 0 0 0 0 0 0 - 0 1 content 0 content 

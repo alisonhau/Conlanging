@@ -1,0 +1,17 @@
+0 m - n 0 0 0 0 l + I + 0 2 s 1 - 0 0 0.11000001 107.65151 109.43182 105.98485 0 onset coda coda 0 0 1 0 0 1 initial I + 0 2 s 1 - 0 0 0 0 content content 0 
+1 m - n 0 0 0 0 l + I + 0 2 s 1 - 0 0 0.11000001 112.95454 114.77273 111.28788 0 onset coda coda 0 0 1 0 0 1 initial I + 0 2 s 1 - 0 0 0 0 content content 0 
+2 x - f 0 0 0 0 v - n - n 0 0 0 0 a + 0.10999995 121.26263 122.60101 120.17677 0 coda coda onset 0 1 0 0 0 1 initial m - n 0 0 0 0 l + 0 0 content content content 
+3 N - n 0 0 0 0 v + Z - f 0 0 0 0 j + 0.11000001 113.33333 114.77273 112.0202 0 coda coda onset 0 1 0 0 0 1 initial r - r 0 0 0 0 a + 0 0 content content content 
+4 x - f 0 0 0 0 v - n - n 0 0 0 0 a + 0.1099999 118.43434 120 117.32323 0 coda coda onset 0 1 0 0 0 1 initial m - n 0 0 0 0 l + 0 0 content content content 
+5 x - f 0 0 0 0 v - n - n 0 0 0 0 a + 0.1099999 119.14439 120.50802 117.96792 0 coda coda onset 0 1 0 0 0 1 initial m - n 0 0 0 0 l + 0 0 content content content 
+6 m - n 0 0 0 0 l + I + 0 2 s 1 - 0 0 0.11000001 108.71212 110.37878 107.04546 0 onset coda coda 0 0 1 0 0 1 initial I + 0 2 s 1 - 0 0 0 0 content content 0 
+7 m - n 0 0 0 0 l + I + 0 2 s 1 - 0 0 0.11000001 113.48485 115.94697 111.81818 0 onset coda coda 0 0 1 0 0 1 initial I + 0 2 s 1 - 0 0 0 0 content content 0 
+8 m - n 0 0 0 0 l + I + 0 2 s 1 - 0 0 0.10999995 114.36364 116.36363 112.36364 0 onset coda coda 0 0 1 0 0 1 initial I + 0 2 s 1 - 0 0 0 0 content content 0 
+9 m - n 0 0 0 0 l + I + 0 2 s 1 - 0 0 0.11000001 113 115 111 0 onset coda coda 0 0 1 0 0 1 initial I + 0 2 s 1 - 0 0 0 0 content content 0 
+10 H - f 0 0 0 0 g + m - n 0 0 0 0 l + 0.1099999 107.94872 108.97436 106.92308 0 coda onset onset 0 1 0 1 0 0 mid N - n 0 0 0 0 v + 0 0 content content 0 
+11 x - f 0 0 0 0 v - n - n 0 0 0 0 a + 0.11000001 115.1282 117.15618 114.21912 0 coda coda onset 0 1 0 0 0 1 initial m - n 0 0 0 0 l + 0 0 content content content 
+12 H - f 0 0 0 0 g + m - n 0 0 0 0 l + 0.1099999 114.69697 115.5303 113.86363 0 coda onset onset 0 1 0 1 0 0 mid N - n 0 0 0 0 v + 0 0 content content content 
+13 x - f 0 0 0 0 v - n - n 0 0 0 0 a + 0.11000001 120.26515 121.32576 119.4697 0 coda coda onset 0 1 0 0 0 1 initial m - n 0 0 0 0 l + 0 0 content content content 
+14 N - n 0 0 0 0 v + Z - f 0 0 0 0 j + 0.11000013 107.81818 109.90909 106.77273 0 coda coda onset 0 1 0 0 0 1 initial r - r 0 0 0 0 a + 0 0 content content content 
+15 x - f 0 0 0 0 v - n - n 0 0 0 0 a + 0.1099999 114 116.34091 113 0 coda coda onset 0 1 0 0 0 1 initial m - n 0 0 0 0 l + 0 0 content content content 
+16 m - n 0 0 0 0 l + I + 0 2 s 1 - 0 0 0.10999995 115.54546 117.45454 113.54546 0 onset coda coda 0 0 1 0 0 1 initial I + 0 2 s 1 - 0 0 0 0 content content 0 
