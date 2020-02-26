@@ -11,9 +11,29 @@
   - showlex.py: show all words in lexicon (not used for anything)
   - statements.py: common constant output messages
   - tsv\_funs.py: input to and output from .tsv files
+
+- FUTURE TODO
+- implement search
+    - search by meaning
+    - search by word
+    - search by about
+    - search by part of speech
+    - search by regex
+- update translation/ex sentences by index (change/delete)
+- word lock (can't delete unless unlock)
+- improve sorting of ipa symbols (low priority)
+- search loop -- search + keywords to filter results one keyword at a time
+- up arrow for repl history??? (necessary?)
+- ^ https://docs.python.org/3/library/readline.html
+
+
 ---
 1. Backstory (needs updating)
 2. Cognitive Metaphors
 3. Sounds & Syllables	(needs updating)
 4. Time Sentences
 5. Talking Clock
+6. 50 Noun Phrases
+
+
+
