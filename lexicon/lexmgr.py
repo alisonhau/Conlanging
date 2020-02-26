@@ -9,10 +9,7 @@ from statements import INTRO_STATEMENT, EXIT_STATEMENT, INPUT_ERROR_STATEMENT
     # search by about
     # search by part of speech
     # search by regex
-# implement update
-    # spelling
-    # meaining
-    # part of speech
+# update translation/ex sentences by index (change/delete)
 # word lock (can't delete unless unlock)
 # improve sorting of ipa symbols (low priority)
 # search loop -- search + keywords to filter results one keyword at a time
@@ -30,6 +27,7 @@ FUNCTION_KEYS = {
         'show-long': LexFuncs.show_long,
         'update-ipa': LexFuncs.update_ipa,
         'update-mean': LexFuncs.update_mean,
+        'update-eg': LexFuncs.update_eg,
         'update-pos': LexFuncs.update_pos,
         'search': LexFuncs.search,
         'search-ipa': LexFuncs.search_ipa,

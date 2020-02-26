@@ -3,6 +3,7 @@ from lexicon_entry import LexiconEntry
 from tsv_funcs import dict_to_tsv
 # implement search loop
 
+# helper funcs
 def accept_entry(entry_type):
     entry = input("%s: " % entry_type).strip()
     while entry == '':
@@ -12,6 +13,22 @@ def accept_entry(entry_type):
             return None
     
     return entry
+
+def lex__search( lex_dictionary, field, target ):
+   return
+    
+def accept_word_params():
+    word_ipa = accept_entry("IPA")
+    if word_ipa is None: 
+        return None, None
+
+    word_pos = accept_entry("POS")
+    if word_pos is None:
+        return None, None
+
+    return word_ipa, word_pos
+
+#
 
 def add(lex_d):
     print("Add new word")
@@ -25,8 +42,7 @@ def add(lex_d):
     new_trans = accept_entry("Closest English translation(s) (separate by ; if multiple)")
     if new_trans is None: return lex_d
 
-    new_eg = input("Example sentence(s) (optional, separate by ; if multiple): ") or ''
-
+    new_eg = input("Example sentence(s) (optional, separate by ; if multiple): ")
 
     new_word = LexiconEntry(ipa=new_ipa, pos=new_pos, trans=new_trans, eg=new_eg)
     
@@ -93,13 +109,137 @@ def show_long(lex_d):
     return lex_d
 
 def update_ipa(lex_d):
-    return
+    print("Update word IPA.  Which word do you want to update?")
+    word_ipa, word_pos = accept_word_params()
+    if word_ipa is None or word_pos is None:
+        return lex_d
+   
+    lex_word = lex_d.pop( (word_ipa, word_pos), None )
+    if lex_word is None:
+        print("%s(%s) not in lexicon.  To see all words in lexicon, use command \'show\'." % (word_ipa, word_pos))
+        return lex_d
+    
+    lex_word.show_long_entry()
 
-def update_mean(lex_d):
-    return
+    new_ipa = accept_entry("\nUpdated IPA")
+    if new_ipa is None: return lex_d
+
+    lex_word.set_ipa(new_ipa)
+    print("Proposed update: ")
+    lex_word.show_long_entry()
+    usr_update = input("Update? ([Y]/n) ").strip().lower()
+    while usr_update not in ['y', 'n', '']:
+        usr_update = input("Update? ([Y]/n) ").strip()
+    if usr_update == 'n':
+        lex_word.set_ipa(word_ipa)
+        print("Update discarded.")
+    else: 
+        lex_word.show_long_entry()
+        print("Updated!")
+    
+    lex_d[ (new_ipa, word_pos) ] = lex_word
+    return lex_d
+
 
 def update_pos(lex_d):
-    return
+    print("Update word POS.  Which word do you want to update?")
+    word_ipa, word_pos = accept_word_params()
+    if word_ipa is None or word_pos is None:
+        return lex_d
+   
+    lex_word = lex_d.pop( (word_ipa, word_pos), None )
+    if lex_word is None:
+        print("%s(%s) not in lexicon.  To see all words in lexicon, use command \'show\'." % (word_ipa, word_pos))
+        return lex_d
+    
+    lex_word.show_long_entry()
+
+    new_pos = accept_entry("\nUpdated POS")
+    if new_pos is None: return lex_d
+
+    lex_word.set_pos(new_pos)
+    print("Proposed update: ")
+    lex_word.show_long_entry()
+    usr_update = input("Update? ([Y]/n) ").strip().lower()
+    while usr_update not in ['y', 'n', '']:
+        usr_update = input("Update? ([Y]/n) ").strip()
+    if usr_update == 'n':
+        lex_word.set_pos(word_pos)
+        print("Update discarded.")
+    else: 
+        lex_word.show_long_entry()
+        print("Updated!")
+    
+    lex_d[ (word_ipa, new_pos) ] = lex_word
+    return lex_d
+
+
+def update_mean(lex_d):
+    print("Update word translations.  Which word do you want to update?")
+    word_ipa, word_pos = accept_word_params()
+    if word_ipa is None or word_pos is None:
+        return lex_d
+   
+    lex_word = lex_d.pop( (word_ipa, word_pos), None )
+    if lex_word is None:
+        print("%s(%s) not in lexicon.  To see all words in lexicon, use command \'show\'." % (word_ipa, word_pos))
+        return lex_d
+    
+    lex_word.show_long_entry()
+    word_trans = lex_word.get_trans()
+
+    new_trans = accept_entry("\nUpdated English translations")
+    if new_trans is None: return lex_d
+
+    lex_word.set_trans(new_trans)
+    print("Proposed update: ")
+    lex_word.show_long_entry()
+    usr_update = input("Update? ([Y]/n) ").strip().lower()
+    while usr_update not in ['y', 'n', '']:
+        usr_update = input("Update? ([Y]/n) ").strip()
+    if usr_update == 'n':
+        lex_word.set_trans(word_trans)
+        print("Update discarded.")
+    else: 
+        lex_word.show_long_entry()
+        print("Updated!")
+    
+    lex_d[ (word_ipa, word_pos) ] = lex_word
+    return lex_d
+
+def update_eg(lex_d):
+    print("Update example sentences.  Which word do you want to update?")
+    word_ipa, word_pos = accept_word_params()
+    if word_ipa is None or word_pos is None:
+        return lex_d
+   
+    lex_word = lex_d.pop( (word_ipa, word_pos), None )
+    if lex_word is None:
+        print("%s(%s) not in lexicon.  To see all words in lexicon, use command \'show\'." % (word_ipa, word_pos))
+        return lex_d
+    
+    lex_word.show_long_entry()
+    word_eg = lex_word.get_eg()
+
+    new_eg = accept_entry("\nUpdated example sentences")
+    if new_eg is None: return lex_d
+
+    lex_word.set_eg(new_eg)
+    print("Proposed update: ")
+    lex_word.show_long_entry()
+    usr_update = input("Update? ([Y]/n) ").strip().lower()
+    while usr_update not in ['y', 'n', '']:
+        usr_update = input("Update? ([Y]/n) ").strip()
+    if usr_update == 'n':
+        lex_word.set_eg(word_eg)
+        print("Update discarded.")
+    else: 
+        lex_word.show_long_entry()
+        print("Updated!")
+    
+    lex_d[ (word_ipa, word_pos) ] = lex_word
+    return lex_d
+
 
 def search(lex_d):
     return

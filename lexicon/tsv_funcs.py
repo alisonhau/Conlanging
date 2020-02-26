@@ -44,8 +44,8 @@ def dict_to_tsv(outfile, output_dict, output_header):
                 lexfile.write(BLANK_TSV_LINE)
             ipa = output_dict[entry].get_ipa().strip()
             pos = output_dict[entry].get_pos().strip()
-            trans = '; '.join(output_dict[entry].get_trans())
-            ex = '; '.join(output_dict[entry].get_eg())
+            trans = output_dict[entry].get_trans()
+            ex = output_dict[entry].get_eg()
             lexfile.write('%s\t%s\t%s\t%s\n' % (ipa, pos, trans, ex)) 
             prev_first_char = first_char
 

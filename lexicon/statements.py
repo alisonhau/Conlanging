@@ -8,8 +8,9 @@ MAN_STATEMENT = '''Commands:
     add new word -- add
     remove word -- rem
     update word ipa -- update-ipa
-    update word meaning -- update-mean
     update word part of speech -- update-pos
+    update word meanings -- update-mean
+    update word examples -- udpate-eg
     begin search loop -- search
     search for word by ipa -- search-ipa
     search for word by ipa regex -- search-ipa-regex

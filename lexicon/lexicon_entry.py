@@ -33,8 +33,8 @@ class LexiconEntry:
         self.ipa = ipa
         self.pos = pos
         self.pos_enum = pos_enum(pos)
-        self.trans = trans.split(";")
-        self.eg = eg.split(",")
+        self.trans = trans
+        self.eg = eg
 
     # set eq and ne funcs
     def __eq__(self, other):
@@ -67,37 +67,43 @@ class LexiconEntry:
         self.pos = pos
         self.pos_enum = pos_enum(pos)
     def set_trans(self, trans):
-        self.trans = [trans]
+        self.trans = trans
     def set_eg(self, eg):
-        self.eg = [eg]
+        self.eg = eg
 
     # work with eg as a list of string examples
     def set_eg_idx(self,idx, ex):
-        self.eg[idx] = ex
+        eg_arr = self.eg.split("; ")
+        eg_arr[idx] = ex
+        self.eg = "; ".join(eg_arr)
     def get_eg_idx(self, idx):
-        return self.eg[idx]
+        eg_arr = self.eg.split("; ")
+        return eg_arr[idx]
     def add_eg(self, ex):
-        self.eg += [ex]
+        self.eg += "; " + eg
 
     # work with trans as a list of possible translations
     def set_trans_idx(self, idx, t):
-        self.trans[idx] = t
+        trans_arr = self.trans.split("; ")
+        trans_arr[idx] = t
+        self.trans = "; ".join(trans_arr)
     def get_trans_idx(self, idx):
-        return self.trans[idx]
+        trans_arr = self.trans.split("; ")
+        return trans_arr[idx]
     def add_trans(self, t):
-        self.trans += [t]
+        self.trans += "; " + t
 
     # show entry contents
     def show_long_entry(self):
-        if self.eg[0] != '':
+        if self.eg.strip() != '':
             print("\nIPA Latex:\t%s\nPart of Speech:\t%s\nEnglish Translation(s):\t%s\nExample Sentence(s):\t%s\n" % 
-                    (self.ipa, self.pos, '; '.join(self.trans), '; '.join(self.eg)))
+                    (self.ipa, self.pos, self.trans, self.eg) )
         else:
             print("\nIPA Latex:\t%s\nPart of Speech:\t%s\nEnglish Translation(s):\t%s\n" % 
-                    (self.ipa, self.pos, '; '.join(self.trans)))
+                    (self.ipa, self.pos, self.trans))
 
     def show_line_entry(self):
-        if self.eg[0].strip() != '':
-            print("%s(%s):\t%s\t\te.g. %s" % (self.ipa, self.pos, '; '.join(self.trans),'; '.join(self.eg)))
+        if self.eg.strip() != '':
+            print("%s(%s):\t%s\t\te.g. %s" % (self.ipa, self.pos, self.trans, self.eg))
         else:
-            print("%s(%s):\t%s" % (self.ipa, self.pos, '; '.join(self.trans)))
+            print("%s(%s):\t%s" % (self.ipa, self.pos, self.trans) )
