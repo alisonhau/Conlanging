@@ -2,20 +2,6 @@ import lex_funcs as LexFuncs
 import tsv_funcs as TSVFuncs
 from statements import INTRO_STATEMENT, EXIT_STATEMENT, INPUT_ERROR_STATEMENT
 
-# FUTURE TODO
-# implement search
-    # search by meaning
-    # search by word
-    # search by about
-    # search by part of speech
-    # search by regex
-# update translation/ex sentences by index (change/delete)
-# word lock (can't delete unless unlock)
-# improve sorting of ipa symbols (low priority)
-# search loop -- search + keywords to filter results one keyword at a time
-# up arrow for repl history??? (necessary?)
-# ^ https://docs.python.org/3/library/readline.html
-
 IN_LEX_FILE = 'lexicon-data.tsv'
 OUT_LEX_FILE = 'lexicon-data.tsv'
 
