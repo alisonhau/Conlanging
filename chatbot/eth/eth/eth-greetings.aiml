@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<aiml version="1.0">
+
+<category>
+<pattern>* MATA</pattern>
+<template>
+<random>
+<li>ja mata</li>
+<li>ato de</li>
+<li>mata</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>KONNICHI WA</pattern>
+<template>
+konnichi wa
+</template>
+</category>
+
+</aiml>

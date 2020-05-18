@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.13)  29 APR 2020 14:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.2.13)  23 APR 2020 05:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**np_temp.tex
-(./np_temp.tex
+**chatbot.tex
+(./chatbot.tex
 LaTeX2e <2020-02-02> patch level 1
 L3 programming layer <2020-02-11>
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
@@ -130,8 +130,8 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count185
 \l__pdf_internal_box=\box52
 )
-(./np_temp.aux)
-\openout1 = `np_temp.aux'.
+(./chatbot.aux)
+\openout1 = `chatbot.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
 LaTeX Font Info:    ... okay on input line 23.
@@ -202,53 +202,35 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 LaTeX Font Warning: Font shape `T3/cmr/m/it' in size <10> not available
-(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 89.
+(Font)              Font shape `T3/cmr/m/sl' tried instead on input line 34.
 
 [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 233--236
-
- []
-
-[3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 373--376
-
- []
-
-[6] [7]
-Underfull \hbox (badness 10000) in paragraph at lines 539--543
-
- []
-
-[8] (./np_temp.aux) ) 
+[2] [3] [4] (./chatbot.aux) ) 
 Here is how much of TeX's memory you used:
- 2975 strings out of 481242
- 38263 string characters out of 5917990
- 278700 words of memory out of 5000000
- 18235 multiletter control sequences out of 15000+600000
- 542829 words of font info for 62 fonts, out of 8000000 for 9000
+ 2969 strings out of 481242
+ 38196 string characters out of 5917990
+ 272668 words of memory out of 5000000
+ 18230 multiletter control sequences out of 15000+600000
+ 542163 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 37i,8n,64p,504b,323s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbxti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbo
-ls/msbm10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/tipa/tipa1
-0.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/tipa/tipasl10.pfb>
-
-Output written on np_temp.pdf (8 pages, 152164 bytes).
+ 37i,7n,64p,545b,207s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr17.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfo
+nts/cm/cmti10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/tipa/t
+ipa10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/tipa/tipasl10.
+pfb>
+Output written on chatbot.pdf (4 pages, 119443 bytes).
 PDF statistics:
- 83 PDF objects out of 1000 (max. 8388607)
- 59 compressed objects within 1 object stream
+ 57 PDF objects out of 1000 (max. 8388607)
+ 40 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

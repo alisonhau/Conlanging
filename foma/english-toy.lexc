@@ -1,0 +1,64 @@
+!!! english-toy.lexc !!!
+!!! apply down: underlying to surface e.g. appy down try+N+Pl !!!
+!!! apply up: all possible analyses of word e.g. apply up try !!!
+
+Multichar_Symbols +Adj +N +V +Sg +Pl +Prs +3sg +Pst +PstPtcp +PrsPtcp
+
+LEXICON Root
+Noun ;
+Verb ;
+Adj  ;
+
+LEXICON Adj
+
+happy	Adjder;
+
+LEXICON Adjder
+
++N:^ness	Nder;
++N:^ness	#;
+
+LEXICON Noun
+
+car	Ninfl;
+salmon	Ninfl;
+pig	Ninfl;
+picnic	Ninfl;
+box	Ninfl;
+church	Ninfl;
+goose	Ninfl;
+try	Ninfl;
+Alambak	Ninfl;
+
+LEXICON Nder
+
++Adj:^less	Adjder;
++Adj:^less	#;
+
+LEXICON Ninfl
++N+Sg:0		#;
++N+Pl:^s	#;
+
+LEXICON Verb
+
+try	Vinfl;
+swim	Vinfl;
+floss	Vinfl;
+explode	Vinfl;
+move	Vinfl;
+give	Vinfl;
+have	Vinfl;
+go	Vinfl;
+go+V+	#;
+go+V+Pst:went	#;
+walk	Vinfl;
+beg	Vinfl;
+
+LEXICON Vinfl
+
++V+Prs:0	#;
++V+Pst:^ed	#;
++V+Prs+3sg:^s	#;
++v+PstPtcp:^ed	#;
++V+PrsPtcp:^ing	#;
+

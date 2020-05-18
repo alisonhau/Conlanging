@@ -1,0 +1,31 @@
+SSeSSAr		SSeSS(fish)+Sg+Acc
+saImAr		saIp(tail-fin)+Sg+Acc
+Inslit		Ins(have)+3rd+Pl+Pl+Prs+Perf
+aNsaImsfE	2Ord+saIp(tail-fin)+Pl+Poss
+aNxEt		2Ord+xEt(hour)+Sg+Nom
+aNxEn@		2Ord+xEt(hour)+Pl+Adp
+Heiima		Hei(smell)+3rd+Sg+Fut+Perf
+SSeSSsfE	SSeSS(fish)+Pl+Poss
+UmmiEma		Ummi(swim)+2nd+Sg+Prs+Perf
+UssawAt		Uss(hear)+3rd+Sg+Pst+Imp
+Ussa		Uss(hear)+3rd+Sg+Prs+Perf
+Heilit		Hei(smell)+3rd+Pl+Prs+Perf	
+HeilinwAt	Hei(smell)+3rd+Pl+Prs+Imp
+eNek		eNek(debris/trash)+Sg+Nom
+aNsaZImir	2Ord+saZIm(rising-tide)+Du+Acc
+anInEmsfE	anInEm(flesh/meat)+Pl+Poss
+ZaAr		Pro+Sg+3rd+Acc
+aNanInEmi	2Ord+anInEm(flesh/meat)+Du+Adp
+eNeN@		eNek(debris/trash)+Pl+Adp
+alzEnwAt	alz(give)+1st+Sg+Prs+Imp
+lENE		lek(flap)+2nd+Sg+Prs+Perf
+lENaITE		lek(flap)+1st+Pl+Exc+Pst+Perf
+eINaITi		eIN(begin)+1st+Pl+Exc+Fut+Perf
+
+aNHeiEt		Can't apply ordinal prefix to verb
+lEkE		Stop in the middle of the word
+aNxEt@		Stop in the middle of the word
+aNaNSSeSS	Can't double-apply ordinal prefix to noun
+Zam		Can't apply nominal endings to pronoun
+xEna		Can't apply verb endings to a noun
+saIpir		Stop in the middle of the word

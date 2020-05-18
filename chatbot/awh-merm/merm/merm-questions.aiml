@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<aiml version="1.0">
+
+	<category>
+		<pattern>SA *</pattern>
+		<template>
+			<star/> ZE
+		</template>
+	</category>
+	<category>
+		<pattern>ZE *</pattern>
+		<template>
+			<star/> sA
+		</template>
+	</category>
+	
+	<category>
+		<pattern>SAZE *</pattern>
+		<template>
+			<random>
+				<li> <star/> sA</li>
+				<li> <star/> ZE</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ZATHE ZEIN</pattern>
+		<template>
+			<random>
+				<li>wlAt zEIn</li>
+				<li>wlAt zEIn AmAIt</li>
+				<li>wlAt S:eS:</li>
+				<li>wlAt wlAt</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>ZATHE * YAMSAWAT</pattern>
+		<template>
+			<random>
+				<li>wlAt <star/> !amsEnwAt</li>
+				<li>slAp <star/> !amsemswAt</li>
+				<li>zEIn <star/> !amsEwAt</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* XENR ANRTHE *</pattern>
+		<template><star/> xEnir aNir <star index="2"/></template>
+	</category>
+	<category>
+		<pattern>INSA *</pattern>
+		<template>
+			<random>
+				<li>ZE</li>
+				<li>sA</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>INSE *</pattern>
+		<template>
+			<random>
+				<li><star/> insEt</li>
+				<li><star/> s^insEt</li>
+			</random>
+		</template>
+	</category>
+	<category>
+		<pattern>UMINI * WLANA</pattern>
+		<template>
+			<random>
+				<li><star/> Umiwi</li>
+				<li><star/> s^Umiwi</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>* ZATHE *</pattern>
+		<template>
+			<star/> simUIt 
+		</template>
+	</category>
+
+
+	<category>
+		<pattern>WLAT *</pattern>
+		<template>
+			eUZ <star/> wlAt AmA
+		</template>
+	</category>
+
+</aiml>

@@ -1,0 +1,21 @@
+### english-toy.xst ###
+### put spaces between anything not multichar symbol ###
+### .o. composition ###
+#
+#Classes
+define V [a | e | i | o | u ];		# vowels
+define S [s | z | x | c h | s h ];	# sibilants
+
+read lexc english-toy.lexc
+define Lexicon;
+
+# E-deletion: silent e dropped before -ing, -ed (make/making)
+define EDeletion e -> 0 || _ "^" [ i n g | e d ];
+
+# E-insertion
+# can't put 0 on left side of arrow!!!
+define EInsertion [..] -> e || S _ "^" s ;
+
+define Grammar Lexicon .o. EDeletion .o. EInsertion;
+
+regex Grammar;

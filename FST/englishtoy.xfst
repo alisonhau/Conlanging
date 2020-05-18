@@ -1,0 +1,23 @@
+### english-toy.xfst ###
+
+# Classes
+define V [ a | e | i | o | u ]; # vowels
+define S [ s | z | x | c h | s h ]; # sibilants
+
+read lexc english-toy.lexc
+define Lexicon;
+
+
+# E deletion: silent e dropped before -ing and -ed (make/making)
+define EDeletion e -> 0 || _ "^" [ i n g | e d ] ;
+
+# E insertion
+define EInsertion [..] -> e || S "^" _ s ;
+
+# Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+
+define Grammar Lexicon .o. EDeletion .o. EInsertion ;
+
+regex Grammar;

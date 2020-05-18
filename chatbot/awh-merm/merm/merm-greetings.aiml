@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<aiml version="1.0">
+
+	<category>
+		<pattern>EUZ</pattern>
+		<template>
+			<random>
+				<li>aNeUZ</li>
+				<li>A:wE</li>
+			</random>
+		</template>
+	</category>
+
+	<category>
+		<pattern>AAWE</pattern>
+		<template>
+			<random>
+				<li>A:wE</li>
+				<li>mElI sAfi Um:i:ni</li>
+				<li>mElIsAfi</li>
+			</random>
+		</template>
+	</category>
+
+</aiml>

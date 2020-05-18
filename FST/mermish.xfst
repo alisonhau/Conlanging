@@ -1,0 +1,23 @@
+### mermish.xfst ###
+#### Alison Hau (ahau), April 2020 ###
+
+# Classes
+define Stop [ t | k | p ];
+define Nasal [ n | N | m ];
+
+read lexc mermish.lexc
+define Lexicon;
+
+
+# E deletion: silent e dropped before -ing and -ed (make/making)
+#define EDeletion e -> 0 || _ "^" [ i n g | e d ] ;
+
+# stop assimilation
+define StopAssim t -> n, k -> N, p -> m || _ "^";
+
+# Cleanup: remove morpheme boundaries
+define Cleanup "^" -> 0;
+
+define Grammar Lexicon .o. StopAssim .o. Cleanup ;
+
+regex Grammar;

@@ -1,0 +1,13 @@
+Start with your fifty noun phrases and hundred sentences. Choose at least fifteen root words of different parts of speech (e.g., 7 noun roots and 8 verb roots) from your NPs and sentences. You will build an FST that analyzes any inflected and derived forms of these root words.
+
+Submit:
+
+    a regression test suite (upper and lower forms), including ill-formed words with explanations why they should fail
+    a LEXC file
+    a XFST file (optional)
+    a text file with all the pairs that your FST produces
+
+Here are example test suites: manhan.txtPreview the document, edalaa.txtPreview the document, unnamed_conlang.txtPreview the document.
+
+
+

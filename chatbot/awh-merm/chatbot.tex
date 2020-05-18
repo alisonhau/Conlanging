@@ -1,0 +1,208 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[noglossbreaks]{covington}
+\usepackage{tipa}
+\usepackage{amssymb}
+\usepackage{booktabs}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+
+\newcommand{\h}{{$^h$}} 
+\newcommand{\R}{{\*r}}
+\newcommand{\N}{{$\varnothing$}}
+
+\title{Chatbot Dialogs}
+\author{Alison Hau\vspace{-2ex}}
+\date{}
+
+\begin{document}
+\maketitle
+
+Because of the way AIML matches patterns, some characters couldn't be properly entered into the chatbot.  The characters from the input have been transcribed to the proper IPA in the glosses.
+
+\section{Dialog 1}
+\textbf{USR: eUZ}
+\trigloss[preamble={\textipa{eUZ}}]
+{\textipa{eUZ}}
+{hello}
+{hello}
+{Hello.}
+
+\textbf{BOT: aNeUZ}
+\trigloss[preamble={\textipa{aNeUZ}}]
+{\textipa{aN-} \textipa{eUZ}}
+{two- hello}
+{second hello}
+{Hello back to you.}
+
+\textbf{USR: sA SeSAr Za}
+\trigloss[preamble={\textipa{sA S:eS:A\R{} Za}}]
+{\textipa{sA} \textipa{S:eS:} \textipa{-A\R{}} \textipa{Za}}
+{yes\textsc{.q} fish -\textsc{sg.acc} \textsc{3.sg.nom.pron}}
+{yes fish {} it}
+{Isn't this a fish?}
+
+\textbf{BOT: SeSAr Za sA}
+\trigloss[preamble={\textipa{S:eS:Ar Za sA}}]
+{\textipa{S:eS:} \textipa{-Ar} \textipa{Za} \textipa{sA}}
+{fish -\textsc{sg.acc} \textsc{3.sg.nom.pron} no}
+{fish {} it yes}
+{Yes, it is a fish.}
+
+\textbf{USR: ZaTHe ZaAr Yamsawat}
+\trigloss[preamble={\textipa{ZaTe ZaAr !amsawat\h{}}}]
+{\textipa{Za} -\textipa{Te} \textipa{ZaAr} \textipa{!ams} -\textipa{a} -\textipa{wat\h}}
+{\textsc{3.sg.nom.pron} -\textsc{q} \textsc{3.sg.acc.pron} eat -\textsc{3.sg.pres} -\textsc{imp}}
+{who {} it eat {} -ing}
+{Who is eating it?}
+
+\textbf{BOT: wlAt ZaAr !amsEnwAt}
+\trigloss[preamble={\textipa{wlAt\h{} ZaAr !amsEnwAt\h}}]
+{\textipa{wlat\h} \textipa{ZaAr} \textipa{!ams} -\textipa{En} -\textipa{wAt\h}}
+{\textsc{1.sg.nom.pron} \textsc{3.sg.acc.pron} eat -\textsc{1.sg.pres} -\textsc{imp}}
+{I it eat {} -ing}
+{I am eating it.}
+
+\textbf{USR: sAZE manin Za}
+\trigloss[preamble={\textipa{sAZE manin Za}}]
+{\textipa{sA} -\textipa{ZE} \textipa{manin} \textipa{Za}}
+{yes\textsc{.q} -no{.q} delicious \textsc{3.sg.nom.pron}}
+{yes no delicious it}
+{Is it delicious?}
+
+\textbf{BOT: manin Za ZE}
+\trigloss[preamble={\textipa{manin Za ZE}}]
+{\textipa{manin} \textipa{Za} \textipa{ZE}}
+{delicious \textsc{3.sg.nom.pron} no}
+{delicious it no}
+{No, it is not delicious.}
+
+\section{Dialog 2}
+(Loosely based on actual conversations I've had with my dad) \\
+\textbf{USR: InsE xEnr}
+\trigloss[preamble={\textipa{InsE xEn\R}}]
+{\textipa{Ins} -\textipa{E} \textipa{xEn} -\textipa{\R}}
+{have -\textsc{2.sg.pres} hour -\textsc{pl.acc}}
+{have you hour -s}
+{Do you know what time it is?}
+
+\textbf{BOT: xEnr s\^{}insEt}
+\trigloss[preamble={\textipa{xEn\R{} s2insEt\h}}]
+{\textipa{xEn} -\textipa{\R} \textipa{s2}- \textipa{ins} -\textipa{Et\h}}
+{hour -\textsc{pl.acc} \textsc{neg} have -\textsc{1.sg.pres}}
+{hour -s not have I}
+{I don't know what time it is}
+
+\textbf{USR: saZIm xEnr anrTHe Insa}
+\trigloss[preamble={\textipa{saZIm xEn\R{} an\R{}Te Insa}}]
+{\textipa{saZIm} \textipa{xEn} -\textipa{\R} \textipa{an} \textipa{-\R} \textipa{-Te} \textipa{Ins} -\textipa{a}} 
+{{falling tide} hour -\textsc{pl.acc} twelve -\textsc{pl.acc} -\textsc{q} have -\textsc{2.sg.pres}}
+{{falling tide} hour -s twelve -s {} have {}}
+{What time is it? (\textit{How many hours does the falling tide have?})}
+
+\textbf{BOT: saZIm xEnir aNir Insa}
+\trigloss[preamble={\textipa{saZIm xEnir aNir Insa}}]
+{\textipa{saZIm} \textipa{xEN} -\textipa{ir} \textipa{aN} -\textipa{ir} \textipa{Ins} -\textipa{a}}
+{falling-tide hour -\textsc{du.acc} two -\textsc{du.acc} have -\textsc{3.sg.pres}}
+{falling-tide hour -s two {} have {}}
+{It is 1pm.}
+
+\textbf{USR: Insa saZIM xEnir aNir}
+\trigloss[preamble={\textipa{Insa saZIm xEnir aNir }}]
+{\textipa{Ins} -\textipa{a} \textipa{saZIm} \textipa{xEN} -\textipa{ir} \textipa{aN} -\textipa{ir}}
+{have -\textsc{3.sg.pres} falling-tide hour -\textsc{du.acc} two -\textsc{du.acc}}
+{have {} falling-tide hour -s two {}}
+{It's 1pm, yes?}
+
+\textbf{BOT: ZE}
+\trigloss[preamble={\textipa{ZE}}]
+{\textipa{ZE}}
+{No}
+{No}
+{No}
+
+
+
+\section{Dialog 3}
+\textbf{USR: ZaTHe zEIn}
+\trigloss[preamble={\textipa{ZaTe zEIn}}]
+{\textipa{Za} -\textipa{Te} \textipa{zEIn}}
+{\textsc{3.sg.nom.pron} -textsc{q} \textsc{2.sg.nom.pron}}
+{it ? you}
+{Who are you?}
+
+\textbf{BOT: wlAt wlAt}
+\trigloss[preamble={\textipa{wlAt\h{} wlAt{}}}]
+{\textipa{wlAt\h} \textipa{wlAt\h}}
+{\textsc{1.sg.nom.pron} \textsc{1.sg.nom.pron}}
+{I I}
+{I am me.}
+
+\textbf{USR: wlAt USR}
+\trigloss[preamble={\textipa{wlAt\h{} }USR}]
+{\textipa{wlAt\h} USR}
+{I USR}
+{I USR}
+{I am USR.}
+
+\textbf{BOT: eUZ USR wlAt AmA}
+\trigloss[preamble={\textipa{eUZ USR wlAt\h{} AmA}}]
+{\textipa{eUZ} USR \textipa{wlAt\h} \textipa{AmA}}
+{hello USR \textsc{1.sg.nom.pron} birth-parent}
+{hello USR I birth-parent}
+{Hi USR, I'm dad.}
+
+\textbf{USR: Umini sf\^{} wlAnA}
+\trigloss[preamble={\textipa{Um:i:ni sf2 wlAnA}}]
+{\textipa{Um:i} -\textipa{ini} \textipa{sf2} \textipa{wlAnA}}
+{swim -\textsc{2.sg.fut} \textsc{com} \textsc{1.sg.adp.pron}}
+{swim {} with me}
+{Will you swim with me?}
+
+\textbf{BOT: sf\^{} Umiwi}
+\trigloss[preamble={\textipa{sf2 Umiwi}}]
+{\textipa{sf2} \textipa{Um:i} \textipa{-iwi}}
+{\textsc{COM} swim \textsc{1.sg.fut}}
+{with swim {}}
+{I will swim with (you).}
+
+\textbf{USR: nU ZaTHe UmiIla}
+\trigloss[preamble={\textipa{nU ZaTe Um:iIla}}]
+{\textipa{nU} \textipa{Za} -\textipa{Te} \textipa{Um:i} -\textipa{Ila}}
+{\textsc{all} \textsc{3.sg.nom.pron} -\textsc{q} swim -\textsc{1.du.incl.fut}}
+{to what {} swim {}}
+{Where will we swim to?}
+
+\textbf{BOT: nU simUIt}
+\trigloss[preamble={\textipa{nU simUIt\h}}]
+{\textipa{nU} \textipa{simU} -\textipa{it\h}}
+{\textipa{all} iceberg \textsc{-sg.adp}}
+{to iceberg {}}
+{To the iceberg.}
+
+\textbf{USR: sA a:wE}
+\trigloss[preamble={\textipa{sA A:wE}}]
+{\textipa{sA} \textipa{A:wE}}
+{yes bye}
+{yes bye}
+{Okay bye!!}
+
+\textbf{BOT: mElI sAfi Um:i:ni}
+\trigloss[preamble={\textipa{mElI sAfi Um:i:ni}}]
+{\textipa{mE} \textipa{lI} \textipa{sAfi} \textipa{Um:i} -\textipa{ini}}
+{\textsc{imp} \textsc{INE} {deep ocean} swim -\textsc{2.sg.fut}}
+{{} in deep ocean swim {}}
+{Be safe/bye!}
+
+
+\section{Future improvements}
+One thing I wish I could've done that I wasn't able to figure out was how to dynamically answer any type of question, since 1) questions are sometimes marked by moving the VP to the beginning of the sentence, which is hard to identify without hard-coding, and 2) changing the person marking of the verb involves identifying the stem verb and swapping out the word ending, which is also hard to do using the AIML pattern matching and without just hard-coding the verb stems.  Maybe AIML 2.0 or some preprocessing would do the trick.
+
+\end{document}
+
+

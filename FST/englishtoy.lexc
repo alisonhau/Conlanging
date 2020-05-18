@@ -1,0 +1,73 @@
+!!!english.lexc!!!
+
+
+Multichar_Symbols +N +V +Adj +Sg +Pl +Prs +3sg +Pst +PstPtcp +PrsPtcp
+
+
+LEXICON Root
+
+        Noun ;
+        Verb ;
+        Adj  ;
+
+
+LEXICON Adj
+
+happy   Adjder;
+
+
+LEXICON Adjder
+
++N:^ness  Nder;
++N:^ness  #;
+
+
+LEXICON Noun
+
+car      Ninfl;
+salmon   Ninfl;
+pig      Ninfl;
+picnic   Ninfl;
+box      Ninfl;
+church   Ninfl;
+goose    Ninfl;
+try      Ninfl;
+Alamblak Ninfl;
+
+
+LEXICON Nder
+
++Adj:^less Adjder;
++Adj:^less #;
+
+
+LEXICON Ninfl
+
++N+Sg:0    #;
++N+Pl:^s   #;
+
+
+LEXICON Verb
+
+try      Vinfl;
+swim     Vinfl;
+floss    Vinfl;
+explode  Vinfl;
+move     Vinfl;
+give     Vinfl;
+have     Vinfl;
+go       Vinfl;
+walk     Vinfl;
+beg      Vinfl;
+
+
+LEXICON Vinfl
+
++V+Prs:0         #;
++V+Pst:^ed       #;
++V+Prs+3sg:^s    #;
++V+PstPtcp:^ed   #;
++V+PrsPtcp:^ing  #;
+
+
+

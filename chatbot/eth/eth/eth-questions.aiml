@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<aiml version="1.0">
+
+<category>
+<pattern>* SHABERU</pattern>
+<template>
+<srai>TALK GOSSIP</srai>
+</template>
+</category>
+
+<category>
+<pattern>TALK GOSSIP</pattern>
+<template>
+<random>
+<li>Yuki-chan ha Ken-kun ga suki desu.</li>
+<li>Ken-kun ha Yuki-kun ga suki desu.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>IS *</pattern>
+<template>
+<random>
+<li>Yes, <star/>.</li>
+<li>No, <star/>.</li>
+<li>Maybe, <star/>.</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>* KA</pattern>
+<template>
+<random>
+   <li>hai, <star/> yo</li>
+   <li>iie, chigau</li>
+</random>
+</template>
+</category>
+
+<category>
+<pattern>*</pattern>
+<template>
+<random>
+<li>do shimashou ka</li>
+<li>daisuke na eiga wa nan desu ka</li>
+</random>
+</template>
+</category>
+
+</aiml>

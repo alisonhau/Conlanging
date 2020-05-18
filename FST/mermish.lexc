@@ -1,0 +1,149 @@
+!!! mermish.lexc !!!
+!!! Alison Hau (ahau), April 2020 !!!
+
+Multichar_Symbols +N +V +Sg +Du +Pl +Nom +Acc + Adp +Poss +Prs +Pst +Fut +Perf +Imp +1st +2nd +3rd +Perf +Imp +Inc +Exc +2Ord
+
+
+LEXICON Root
+
+	Prefix ;
+        Verb ;
+	Pronoun ;
+
+LEXICON Prefix
+
+2Ord+:ak^ Noun;
+ Noun;
+
+
+LEXICON Pronoun
+
+Pro+Sg+3rd+Nom:Za	#;
+Pro+Sg+3rd+Acc:ZaAr	#;
+Pro+Sg+3rd+Adp:ZaA	#;
+
+
+LEXICON Noun
+
+SSeSS 	Nnum;
+saZIm 	Nnum;
+saIp	Nnum;
+xEt	Nnum;
+eNek	Nnum;
+anInEm	Nnum;
+simU	Nnum;
+
+LEXICON Nnum
+
++Sg:0	NScase;
++Du:0	NDcase;
++Pl:0	NPcase;
+
+LEXICON NScase
+
++Nom:0		#;
++Acc:^Ar	#;
++Adp:^A		#;
++Poss:^It	#;
+
+LEXICON NDcase
+
++Nom:^m		#;
++Acc:^ir	#;
++Adp:^i		#;
++Poss:^wE	#;
+
+LEXICON NPcase
+
++Nom:^He	#;
++Acc:^r		#;
++Adp:^@		#;
++Poss:^sfE	#;
+
+
+LEXICON Verb
+
+Ins	Vpn;
+Hei	Vpn;
+Ummi	Vpn;
+Uss	Vpn;
+lEk	Vpn;
+alz	Vpn;
+eIN	Vpn;
+
+LEXICON Vpn
+
++1st+Sg:0	V1Stense;
++2nd+Sg:0	V2Stense;
++3rd+Sg:0	V3Stense;
+
++1st+Du+Inc:0	V1DItense;
++1st+Du+Exc:0	V1DEtense;
++2nd+Du:0	V2Dtense;
++3rd+Du:0	V3Dtense;
+
++1st+Pl+Inc:0	V1PItense;
++1st+Pl+Exc:0	V1PEtense;
++2nd+Pl:0	V2Ptense;
++3rd+Pl:0	V3Ptense;
+
+
+LEXICON V1Stense
++Pst:^Em	VPerf;
++Prs:^Et	VPerf;
++Fut:^iwi	VPerf;
+
+
+LEXICON V2Stense
++Pst:^Ema	VPerf;
++Prs:^E		VPerf;
++Fut:^ini	VPerf;
+
+LEXICON V3Stense
++Pst:^ama	VPerf;
++Prs:^a		VPerf;
++Fut:^ima	VPerf;
+
+LEXICON V1DItense
++Pst:^Emsala	VPerf;
++Prs:^Ems	VPerf;
++Fut:^Ila	VPerf;
+
+LEXICON V1DEtense
++Pst:^EmsAlt	VPerf;
++Prs:^Emsa	VPerf;
++Fut:^Ilt	VPerf;
+
+LEXICON V2Dtense
++Pst:UrTa	VPerf;
++Prs:^UrT	VPerf;
++Fut:IT		VPerf;
+
+LEXICON V3Dtense
++Pst:^lIna	VPerf;
++Prs:^lIt	VPerf;
++Fut:^Im	VPerf;
+
+LEXICON V1PItense
++Pst:^EITE	VPerf;
++Prs:^EIT	VPerf;
++Fut:^EITi	VPerf;
+
+LEXICON V1PEtense
++Pst:^aITE	VPerf;
++Prs:^aIT	VPerf;
++Fut:^aITi	VPerf;
+
+LEXICON V2Ptense
++Pst:^eaImE	VPerf;
++Prs:^eaI	VPerf;
++Fut:^ITl	VPerf;
+
+LEXICON V3Ptense
++Pst:^linE	VPerf;
++Prs:^lit	VPerf;
++Fut:^Iml	VPerf;
+
+LEXICON VPerf
++Perf:0		#;
++Imp:^wAt	#;

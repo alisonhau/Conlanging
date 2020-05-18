@@ -1,0 +1,30 @@
+\pgfplotstableset{
+	begin table=\begin{longtable},
+	end table=\end{longtable},
+	}
+
+\pgfplotstabletypeset[
+	col sep=comma,
+	string type,
+	%sort,
+	%sort key=ipa,
+	columns={ipa,pos,trans},	% example usage key: eg
+	column type=l,
+	header=true,
+	%sort cmp=string <,
+	%every even row/.style={
+	%	before row={\rowcolor[gray]{0.9}}
+	%	},
+	%skip rows between index={0}{1},
+	columns/ipa/.style={
+		column name=IPA, column type={l},
+		postproc cell content/.style={@cell content=\textipa{##1}}
+		},
+	columns/pos/.style={column name=Part of Speech, column type={c}},
+	columns/trans/.style={
+		column name=English Translation, column type={l}},
+	every head row/.style={before row=\toprule,
+				after row=\midrule\endhead,
+				},
+	every last row/.style={after row=\bottomrule},
+]{lexicon-data.tsv}

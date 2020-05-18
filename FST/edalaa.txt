@@ -1,0 +1,33 @@
+kobomo'	[FUT]omo(think)[SG]
+ofu'	[CONJ-AND]fu(food)[SG]
+abomoo	[PST]omo(think)[PL]
+humake'	huma(person)[DEMONSTRATIVE][SG]
+nomimii	[GEN]mimi(cat)[PL]
+kobabumu'	[FPER]umu(like)[SG]
+ababumu'	[PLP]umu(like)[SG]
+owawaa	[CONJ-AND]wawa(dog)[PL]
+noberibama'	[GEN]eribama(student)[SG]
+keke'	ke(thing)[DEMONSTRATIVE][SG]
+kotoo	ko(go)[FUT][PL]
+kobawosho'	[FPER]wosho(worship)[SG]
+dimikoloo	dimi(time/place)[UNIVERSAL][PL]
+mofuu	[CONJ-OR]fu(food)[PL]
+humakee	huma(person)[DEMONSTRATIVE][PL]
+moshazu'	[CONJ-OR]shazu(cycle)[SG]
+iduu	[PRES]idu(eat)[PL]
+koku'	[PRES]koku(bite)[SG]
+ome'	3rd[SG]
+koto'	ko(go)[FUT][SG]
+
+lokei   Wrong doubling of the vowel at the end
+oeda'   wrong prefix (double vowel)
+kata    neither short or long vowel
+kobera' wrong future conjugation for irregular verb "era"
+ako'    wrong past tense conjugation for irregular verb "ko"
+nodu'   genitive prefix (no-) on pronoun 
+nobera  genitive prefix (no-) on verb
+abkokuu wrong prefix (consonant cluster)
+ababakoku   too many prefixes
+apple   Plain OOV
+koshazu Tense prefix (ko-) on noun
+shazuu' both long and short vowel
