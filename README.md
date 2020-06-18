@@ -26,7 +26,8 @@
 - up arrow for repl history??? (necessary?)
 - ^ https://docs.python.org/3/library/readline.html
 
-
+0.1 Auto-Glossary
+Generates a glossary from a .tsv/.csv file (used in portfolio)
 ---
 1. Backstory (needs updating)
 2. Cognitive Metaphors
@@ -34,6 +35,9 @@
 4. Time Sentences
 5. Talking Clock
 6. 50 Noun Phrases
-
-
+7. Morphological Analyzer (FST/foma)
+8. 100 Sentences
+9. Chat Bot
+10. Narrative
+11. Portfolio
 
