@@ -1,4 +1,4 @@
-port-make: portfolio_template.tex portfolio_template.pdf
-	pdflatex portfolio_template.tex
-	xdg-open portfolio_template.pdf
+port-make: mermish_ref.tex mermish_ref.pdf
+	pdflatex mermish_ref.tex
+	open mermish_ref.pdf
 
